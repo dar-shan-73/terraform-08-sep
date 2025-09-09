@@ -3,6 +3,6 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "my-ec2-instance"
+    Name = "my-ec2-instance using TF"
   }
 }

@@ -16,9 +16,10 @@ output "op" {
 
 
 #variables types
+# dicionary - a key with a value pairs
 # list - a key with multiple values
 # map - a key with multiple key value pairs
-# dicionary - a key with a value pairs
+
 
 # declaring a list variable..list always starts with 01234
 variable "sample" {
@@ -40,4 +41,18 @@ output "sample_output" {
 output "sample_output_1" {
     value = "current topic ${var.sample[1]} and value is ${var.sample[0]} and it is ${var.sample[2]}"
   
+}
+
+    # map variable
+variable "map_var" {
+    default = {
+        name = "mike"
+        content = "devops"
+        salary = "10k"
+    }
+}
+
+
+output "name" {
+    value = var.map_var
 }

@@ -76,3 +76,9 @@ output "env" {
   value = "current env is ${var.env} and it is using instance type ${var.ins_type}"
   
 }
+
+variable "city" {}
+
+output "city_name" {
+  value = "current city is ${var.city}"
+}

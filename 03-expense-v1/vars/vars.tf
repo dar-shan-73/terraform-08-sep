@@ -58,5 +58,5 @@ output "name" {
 }
 
 output "map_varname" {
-    value = "${var.map_var["name"]} is a ${var.map_var["content"]} earning ${var.map_var["salary"]}"
+    value = "${var.map_var["name"]} is a ${var.map_var["content"]} earning salary of ${var.map_var["salary"]}"
 }

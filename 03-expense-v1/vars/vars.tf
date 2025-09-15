@@ -56,3 +56,7 @@ variable "map_var" {
 output "name" {
     value = var.map_var
 }
+
+output "map_varname" {
+    value = "${var.map_var["name"]} is a ${var.map_var["content"]} earning ${var.map_var["salary"]}"
+}

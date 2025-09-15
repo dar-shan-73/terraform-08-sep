@@ -68,3 +68,11 @@ variable "state_name" {
 output "state_name" {
   value = var.state_name
 }
+
+variable "env" {}
+variable "ins_type" {}
+
+output "env" {
+  value = "current env is ${var.env} and it is using instance type ${var.ins_type}"
+  
+}

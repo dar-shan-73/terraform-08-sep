@@ -24,7 +24,7 @@ output "op" {
 variable "sample" {
     default = [
         100,
-        "hello",
+        "terraform",
         true,
     ]
   
@@ -32,4 +32,10 @@ variable "sample" {
 # accesing the list variable
 output "sample_output" {
     value = var.sample
+}
+
+# to access a specific value from the list
+output "sample_output_1" {
+    value = "current topic ${var.sample[1]} and value is ${var.sample[0]} and it is ${var.sample[2]}"
+  
 }

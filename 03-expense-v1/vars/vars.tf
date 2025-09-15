@@ -31,7 +31,9 @@ variable "sample" {
 }
 # accesing the list variable
 output "sample_output" {
-    value = var.sample[1]
+    value = var.sample
+    value = var.sample[0]  #accessing the first value from the list 
+    
 }
 
 # to access a specific value from the list

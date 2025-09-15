@@ -6,5 +6,5 @@ output "apple" {
 
 output "banana" {
   value = "banana color is ${var.fruits["banana"]["color"]} and tastes ${var.fruits["banana"]["taste"]} and price is ${var.fruits["banana"]["price"]}"
-  
+
 }
